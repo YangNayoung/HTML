@@ -1,0 +1,48 @@
+<html>
+<head>
+<!-- margin-left 속성과 padding-right 속성을 사용한 레이아웃 구성 ?
+<!-- 콘텐츠 -->
+<style>
+#wrap { overflow: hidden; }
+#wrap > #main_lnb {
+float: left;
+width: 200px;
+}
+#wrap > #content_wrap {
+float: left;
+width: 100%;
+*width: 99.9%;
+margin-right: -200px;
+}
+#wrap > #content_wrap > #content { padding-right: 200px; }
+</style>
+</head>
+
+<body>
+<!-- #wrap 태그의 내용 입력 -->
+<div id="wrap">
+<nav id="main_lnb">
+<ul>
+<li><a href="#">Button_a</a></li>
+<li><a href="#">Button_b</a></li>
+<li><a href="#">Button_c</a></li>
+<li><a href="#">Button_d</a></li>
+<li><a href="#">Button_e</a></li>
+</ul>
+</nav>
+<div id="content_wrap">
+<div id="content">
+<article>
+<h1>Lorem ipsum dolor sit amet</h1>
+<p>Lorem ipsum dolor sit amet, </p>
+<p>Lorem ipsum dolor sit amet, </p>
+</article>
+<article>
+<h1>Lorem ipsum dolor sit amet</h1>
+<p>Lorem ipsum dolor sit amet, </p>
+<p>Lorem ipsum dolor sit amet, </p>
+</article>
+</div>
+</div>
+</div>
+</body></html>
